@@ -4,19 +4,20 @@ const num1 = 5;
 const num2 = 3;
 
 function multiply(){
-  return num1 x num2
+  debugger
+  return num1 * num2
 }
 
-if multiple() === 10 {
-  console.log"FIXED"
+if (multiply() === 10) {
+  console.log("FIXED")
 } else {
   console.log("Broken")
 }
 
 // =====================challenge 2==============================
 
-function displaymessage(message){
-  return "This is the message: " + mesage;
+function displayMessage(message){
+  return "This is the message: " + message;
 }
 
 displayMessage("Why am I broken?!?!? Or am I now Fixed?")
@@ -24,8 +25,8 @@ displayMessage("Why am I broken?!?!? Or am I now Fixed?")
 
 // =====================challenge 3==============================
 
-const title = Mrs ;
-const name = Erin;
+const title = "Mrs" ;
+const name = "Erin";
 
 function addTitle(){
   return title + ". " + name
@@ -35,11 +36,11 @@ addTitle()
 
 // =====================challenge 4==============================
 
-const today = new date();
+const today = new Date();
 let time = today.getHours();
 
 if (time < 10) {
-	console.log("Good Morning";)
+	console.log("Good Morning")
 } else {
 	let here = ((time < 18) ? ((time < 13) ? "Good Day" : "Good Afternoon") : "Good Evening");
 	console.log(here);
@@ -47,9 +48,9 @@ if (time < 10) {
 
 // =====================challenge 5==============================
 
-let a:5;
-let b:6;
-let c:7;
+let a = 5;
+let b = 6;
+let c = 7;
 
 if(a>b && b>c && c>a)
 {
@@ -62,22 +63,24 @@ else
 
 // =====================challenge 6==============================
 
-let today = new Date();
-let time = today.getHours();
+let now = new Date();
+let hourOfTheDay = now.getHours();
 
- if {
+ if(hourOfTheDay < 10) {
    console.log("Good day!")
- } else(time < 10) {
+ } else {
    console.log("Good morning!")
  }
 
 // =====================challenge 7==============================
 
-let quote = "JFK once said, "Evil can only prevail if good [people] do nothing.""
+ //** uncomment out the code below when you get to this challenge.
+ //** should output: JFK once said "Evil can only prevail if good [people] do nothing."
 
-console.log(quote)
+// let quote = "JFK once said, "Evil can only prevail if good [people] do nothing.""
 
-// should output: JFK once said "Evil can only prevail if good [people] do nothing."
+// console.log(quote)
+
 
 // =====================challenge 8==============================
 
@@ -86,10 +89,10 @@ console.log(quote)
 
 
 // function startTime() {
-//  let today = new Date();
-//  let hours = today.getHours();
-//  let minutes = today.getMinutes();
-//  let seconds = today.getSeconds();
+//  let time = new Date();
+//  let hours = time.getHours();
+//  let minutes = time.getMinutes();
+//  let seconds = time.getSeconds();
 //
 //  minutes = checkTheTime(minutes)
 //  sseconds = checkTheTime(seconds)
